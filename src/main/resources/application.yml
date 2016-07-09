@@ -1,0 +1,19 @@
+#
+# Spring Boot configuration
+#  - options: https://github.com/spring-projects/spring-boot/blob/master/spring-boot-docs/src/main/asciidoc/appendix-application-properties.adoc
+#
+
+info:
+    version: @project.version@
+    scm-url: @scm.url@
+    stage: test
+
+server:
+    port: 7080
+
+spring:
+    application:
+        name: @pom.artifactId@
+    boot:
+        admin:
+          url: http://localhost:7080
